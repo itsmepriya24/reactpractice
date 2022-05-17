@@ -1,17 +1,24 @@
 import React from "react";
+import {useState} from "react";
 
-function Test1()
+function Test1(props)
 {
-    function calltest1()
+    const[data,setData] = useState();
+    const[print,setPrint] = useState(false);
+
+    function setTest1(val)
     {
+        setData(val.target.value);
+    } 
     
-    }
-    return(
+    return(     
         <div>
-         <h3>Test1</h3>
-         <input type="text" id="name1" />
-        <label id="label1"></label>
-        <button onClick={calltest1}>Submit</button>
+            <h3>{props.name}</h3>
+            <input type="text" onChange={setTest1}/>
+            {
+                print?<label>{data}</label>:null
+            }
+            <div><button onClick={()=>setPrint(true)}> Submit </button></div>
         </div>
     )
 }
