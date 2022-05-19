@@ -3,6 +3,7 @@ import React from "react";
 import Test1 from './Test1.js';
 import Test2 from "./Test2.js";
 import Hide_show from "./Hide_show";
+import Form from "./Form";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Test1 name="Test 1"/>
       <Test2 />
       <Hide_show />
+      <Form />
     </div>
   );
 }
