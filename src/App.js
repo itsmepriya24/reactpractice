@@ -4,6 +4,7 @@ import Test1 from './Test1.js';
 import Test2 from "./Test2.js";
 import Hide_show from "./Hide_show";
 import Form from "./Form";
+import Ifelse from './Ifelse';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Test2 />
       <Hide_show />
       <Form />
+      <Ifelse />
     </div>
   );
 }
