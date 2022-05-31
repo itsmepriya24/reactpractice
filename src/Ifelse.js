@@ -1,15 +1,16 @@
-import React from 'react';
-import {useState} from 'react';
+import React from "react";
+import { useState } from "react";
 
-function Ifelse()
-{
-    const[profile,setProfile] = useState(true);
-    
-    return(
-        <div>
-            <h4>Test 5</h4>
-            {profile?<p>Welcome User</p>:<p>Welcome Guest</p>}
-        </div>
-    )
+function Ifelse() {
+  const [profile, setProfile] = useState(2);
+
+  return (
+    <div>
+      <h3>Condition Rendering</h3>
+      {profile==1 ? <p>Welcome User 1</p>
+      : profile==2 ? <p>Welcome User 2</p> 
+      : <p>Welcome Guest</p>}
+    </div>
+  );
 }
 export default Ifelse;
