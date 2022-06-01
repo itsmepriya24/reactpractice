@@ -7,7 +7,7 @@ function User(props){
         <div>
             <h3>Pass function as props</h3>
 
-            <button onClick={()=>props.data()}>Call Data Function</button>
+            <button onClick={()=>props.getdata()}>Call Data Function</button>
             {/* <button onClick={props.data}>Call Data Function</button> */}
         </div>
     )
