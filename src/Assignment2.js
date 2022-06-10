@@ -10,7 +10,7 @@ function Assignment2()
 
     const[data2,setData2]= useState('');
     const[data3,setData3]= useState('');
-    
+
     const ParentToChild = () =>{
         setData2(comp2);
         setData3(comp3);
@@ -36,11 +36,9 @@ function Assignment2()
                 <button type="submit" onClick={()=>ParentToChild()}>Submit</button>
             </div>
             <div>
-                
-                    <Comp2 childToParent2={childToParent2} ParentToChild={data2} />
-               
-                    <Comp3 childToParent3={childToParent3} ParentToChild={data3} />
-                
+                <Comp2 childToParent2={childToParent2} ParentToChild={data2} />
+            
+                <Comp3 childToParent3={childToParent3} ParentToChild={data3} />
             </div>
         </div>
     )
